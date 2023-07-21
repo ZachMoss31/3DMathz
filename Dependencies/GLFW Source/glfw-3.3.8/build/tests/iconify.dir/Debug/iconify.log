@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/tests/CMakeLists.txt
+  iconify.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  iconify.vcxproj -> C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\build\tests\Debug\iconify.exe

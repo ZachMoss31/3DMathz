@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/tests/CMakeLists.txt
+  monitors.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  monitors.vcxproj -> C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\build\tests\Debug\monitors.exe

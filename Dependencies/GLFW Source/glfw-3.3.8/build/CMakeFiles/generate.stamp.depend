@@ -1,0 +1,38 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindDoxygen.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/CMakeLists.txt
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/build/CMakeFiles/3.27.0/CMakeCCompiler.cmake
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/build/CMakeFiles/3.27.0/CMakeRCCompiler.cmake
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/build/CMakeFiles/3.27.0/CMakeSystem.cmake
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/cmake_uninstall.cmake.in
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/src/glfw3.pc.in
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/src/glfw3Config.cmake.in
+C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/src/glfw_config.h.in

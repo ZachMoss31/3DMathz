@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\build\CMakeFiles\8aba242c1d606c00a6dd0cff0b155a34\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{321D1E71-64E9-368E-AA77-B71908E939C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E2F7E97B-8669-3EE7-B885-FDFA456A817C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

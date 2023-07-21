@@ -1,0 +1,10 @@
+^C:\USERS\ZACHM\DESKTOP\PORTFOLIO PROJECTS\3DMATHZ\GLFW SOURCE\GLFW-3.3.8\BUILD\CMAKEFILES\E8DA126FD7F348A6FD12EE2C3646BDE7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8" "-BC:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/zachm/Desktop/Portfolio Projects/3DMathz/GLFW Source/glfw-3.3.8/build/GLFW.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

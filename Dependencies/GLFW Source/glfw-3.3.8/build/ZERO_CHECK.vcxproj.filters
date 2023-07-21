@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\build\CMakeFiles\e8da126fd7f348a6fd12ee2c3646bde7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\cmake_uninstall.cmake.in">
+      <Filter>Buildsystem Input Files</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\examples\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\examples</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\src\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\src</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\src\glfw3.pc.in">
+      <Filter>Buildsystem Input Files\src</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\src\glfw3Config.cmake.in">
+      <Filter>Buildsystem Input Files\src</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\src\glfw_config.h.in">
+      <Filter>Buildsystem Input Files\src</Filter>
+    </None>
+    <None Include="C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\GLFW Source\glfw-3.3.8\tests\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\tests</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{321D1E71-64E9-368E-AA77-B71908E939C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E2F7E97B-8669-3EE7-B885-FDFA456A817C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files">
+      <UniqueIdentifier>{B4C28BED-C40B-32A0-9C5C-664AD80D854A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\examples">
+      <UniqueIdentifier>{24EFB527-8E0F-3857-83CE-ADFAC147286C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\src">
+      <UniqueIdentifier>{7E67CE55-DC75-323D-90C2-B23CE4EDC5B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\tests">
+      <UniqueIdentifier>{26C88CA8-0A2F-3CE4-A40B-CE8B47EDE97E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
