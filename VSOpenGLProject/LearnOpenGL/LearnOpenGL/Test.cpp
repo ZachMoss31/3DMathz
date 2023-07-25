@@ -22,9 +22,10 @@ const char *vertexShaderSource= "#version 330 core\n"
 //Frag Shader only requires ONE output, a vec4 that defines final color output.
 const char *fragmentShaderSource = "#version 330 core\n"
 	"out vec4 FragColor;\n"
+	"uniform vec4 ourColor;"
 	"void main()\n"
 	"{\n"
-	"    FragColor = vec4(0.0f, 1.0f, 0.0f, 1.0f);\n"
+	"    FragColor = ourColor;\n"
 	"}\0";
 const char* fragmentShaderSource2 = "#version 330 core\n"
 "out vec4 FragColor;\n"
@@ -139,6 +140,10 @@ int main() {
 	glEnableVertexAttribArray(0);
 	
 	
+	float timeValue = glfwGetTime();
+	float greenValue = sin(timeValue) / 2.0f + 0.5f;
+	int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
+	glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 	while(!glfwWindowShouldClose(window)) {
 		processInput(window);
 
@@ -148,6 +153,9 @@ int main() {
 
 		
 		glUseProgram(shaderProgram);
+		timeValue = glfwGetTime();
+		greenValue = sin(timeValue) / 2.0f + 0.5f;
+		glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 		glBindVertexArray(VAOs[0]);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 		
