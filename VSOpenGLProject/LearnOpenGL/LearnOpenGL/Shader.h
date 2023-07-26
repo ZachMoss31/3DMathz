@@ -50,17 +50,80 @@ public:
 		}
 		catch (std::ifstream::failure e) {
 			//setup some enums for warnings instead
-			std::cout << "ERROR:: Shader file not read!" << std::endl;
+			std::cout << "ERROR:: Shader file not read" << std::endl;
 		}
 		//this feels very C and not C++ style.
 		const char* vShaderCode = vertexCode.c_str();
 		const char* fShaderCode = fragmentCode.c_str();
 		//const char* gShaderCode = geometryCode.c_str();
+
+
+		//Compiling the Shaders now...(different function?)
+		unsigned int vertex, fragment;
+		int success;
+		char infoLog[512];
+
+		//Could I multithread the compilation using threads or CUDA?
+			//Vertex Shader
+		vertex = glCreateShader(GL_VERTEX_SHADER);
+		glShaderSource(vertex, 1, &vShaderCode, NULL);
+		glCompileShader(vertex);
+		CheckCompileErrors(vertex, "VERTEX");
+		
+
+			//Fragment Shader
+		fragment = glCreateShader(GL_FRAGMENT_SHADER);
+		glShaderSource(fragment, 1, &fShaderCode, NULL);
+		glCompileShader(fragment);
+		CheckCompileErrors(fragment, "FRAGMENT");
+			
+			//Program
+		ID = glCreateProgram();
+		glAttachShader(ID, vertex);
+		glAttachShader(ID, fragment);
+		glLinkProgram(ID);
+		CheckCompileErrors(ID, "PROGRAM");
+		
+
+		//Delete the shaders now as they are linked, no longer needed
+		glDeleteShader(vertex);
+		glDeleteShader(fragment);
 	}
-	void Use();
-	void SetBool(const std::string& name, bool value) const;
-	void SetInt(const std::string& name, int value) const;
-	void SetFloat(const std::string& name, float value) const;
+
+	void Use() {
+		glUseProgram(ID);
+	}
+
+	//Maybe there are typeof() ways to get around this redundancy here.
+	void SetBool(const std::string& name, bool value) const {
+		glUniform1i(glGetUniformLocation(ID, name.c_str()), (int)value);
+	}
+
+	void SetInt(const std::string& name, int value) const {
+		glUniform1i(glGetUniformLocation(ID, name.c_str()), value);
+	}
+
+	void SetFloat(const std::string& name, float value) const {
+		glUniform1f(glGetUniformLocation(ID, name.c_str()), value);
+	}
+
+private:
+	void CheckCompileErrors(unsigned int shader, std::string type) {
+		int success;
+		char infoLog[1024];
+		if (type != "PROGRAM") {
+			glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+			std::cout << "ERROR:: " << type << " Shader failed to compile. " << infoLog << std::endl;
+		}
+		else {
+			glGetProgramiv(shader, GL_LINK_STATUS, &success);
+			if (!success) {
+				glGetProgramInfoLog(shader, 1024, NULL, infoLog);
+				std::cout << "ERROR:: Program " << type << " link error. " << infoLog << std::endl;
+			}
+		}
+	}
+
 };
 
 #endif
