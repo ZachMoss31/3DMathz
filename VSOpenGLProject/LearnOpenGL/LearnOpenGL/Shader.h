@@ -11,7 +11,7 @@
 //(?) inherit instead? virtual shader, and public : Vertex, Fragment, Geo?
 class Shader {
 public:
-	unsigned int ID;
+	GLuint ID;
 
 	//better to treat this as a 3 index array? with 0 always vertex?
 	//then same with the files getting the codes?
@@ -59,7 +59,7 @@ public:
 
 
 		//Compiling the Shaders now...(different function?)
-		unsigned int vertex, fragment;
+		GLuint vertex, fragment;
 		int success;
 		char infoLog[512];
 

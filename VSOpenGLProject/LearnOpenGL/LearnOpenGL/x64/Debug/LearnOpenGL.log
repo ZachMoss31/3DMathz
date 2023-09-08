@@ -1,4 +1,4 @@
-﻿  Test.cpp
+﻿  Main.cpp
 C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\VSOpenGLProject\LearnOpenGL\LearnOpenGL\Shader.h(64,8): warning C4101: 'infoLog': unreferenced local variable
 C:\Users\zachm\Desktop\Portfolio Projects\3DMathz\VSOpenGLProject\LearnOpenGL\LearnOpenGL\Shader.h(63,7): warning C4101: 'success': unreferenced local variable
 glfw3.lib(init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(init.obj)' or at ''; linking object as if no debug info
