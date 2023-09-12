@@ -113,16 +113,19 @@ public:
 
 private:
 	void CheckCompileErrors(unsigned int shader, std::string type) {
-		int success;
+		GLint hasCompiled;
 		char infoLog[1024];
 		if (type != "PROGRAM") {
-			//currently, this is always throwing error because type is always set to shader instead of program.
-			glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-			std::cout << "ERROR:: " << type << " Shader failed to compile. " << infoLog << std::endl;
+			glGetShaderiv(shader, GL_COMPILE_STATUS, &hasCompiled);
+			if (!hasCompiled) {
+				glGetShaderInfoLog(shader, 1024, NULL, infoLog);
+				std::cout << "ERROR:: " << type << " Shader failed to compile. " << infoLog << std::endl;
+			}
+			
 		}
 		else {
-			glGetProgramiv(shader, GL_LINK_STATUS, &success);
-			if (!success) {
+			glGetProgramiv(shader, GL_COMPILE_STATUS, &hasCompiled);
+			if (!hasCompiled) {
 				glGetProgramInfoLog(shader, 1024, NULL, infoLog);
 				std::cout << "ERROR:: Program " << type << " link error. " << infoLog << std::endl;
 			}

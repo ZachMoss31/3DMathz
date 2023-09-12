@@ -13,7 +13,6 @@ void processInput(GLFWwindow* window);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
-//First Triangle
 GLfloat vertices[] = {
 	//Position Vectors		//Color Vectors (r, g, b)
 	-0.9f, -0.5f, 0.0f,		1.0f, 0.0f, 0.0f,
@@ -21,7 +20,6 @@ GLfloat vertices[] = {
 	-0.45f, 0.5f, 0.0f,		0.0f, 0.0f, 1.0f
 };
 
-//Second Triangle
 GLfloat flipTri[] = {
 	0.0f, 0.5f, 0.0f,
 	0.9f, 0.5f, 0.0f,
@@ -29,18 +27,12 @@ GLfloat flipTri[] = {
 };
 
 int main() {
-
-	//Glfw initialized
+	//-------------------------------------------------------- GLFW -------
 	glfwInit();
-
-	//Tell GLFW which versions we are planning to use
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-
 	//Using the CORE profile. The other is 'Compatibility' for older GL optionality
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-	// Window Build
 	// 4th option is whether to render full screen
 	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "PurpleBox", NULL, NULL);
 	if (window == NULL) {
@@ -51,7 +43,7 @@ int main() {
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-	//Glad function pointers call
+	///-------------------------------------------------------- GLAD -------
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 		std::cout << "Failed to initialize GLAD" << std::endl;
 		return -1;
@@ -65,7 +57,7 @@ int main() {
 	VAO1.Bind();
 	VBO VBO1(vertices, sizeof(vertices));
 	VAO1.LinkAttrib(VBO1, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
-	//Link attribut 1 to color vectors passed in by shader.
+	//Link attribut 1 is to add second set of vectors as colors in 'vertices'.
 	VAO1.LinkAttrib(VBO1, 1, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
 	VAO1.Unbind();
 	VBO1.Unbind();
@@ -76,19 +68,9 @@ int main() {
 	VAO2.LinkAttrib(VBO2, 0, 3, GL_FLOAT, 0, (void*)0);
 	VAO2.Unbind();
 	VBO2.Unbind();
-
-#pragma region Green Glow
-	////Glowing Shader
-	/*float timeValue = glfwGetTime();
-	float greenValue = sin(timeValue) / 2.0f + 0.5f;
-	int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
-	glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);*/
-
-	//then add this in while loop
-		//timeValue = glfwGetTime();
-		//greenValue = sin(timeValue) / 2.0f + 0.5f;
-		//glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
-#pragma endregion
+	GLuint uniID = glGetUniformLocation(secondShader.ID, "greenVal");
+	float timeValue = 1.0f;
+	float greenGlow = 1.0f;
 
 	while(!glfwWindowShouldClose(window)) {
 		processInput(window);
@@ -102,7 +84,11 @@ int main() {
 		VAO1.Bind();
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 		
+		//Second Triangle
 		secondShader.Use();
+		timeValue = glfwGetTime();
+		greenGlow = sin(timeValue) / 2.0f + 0.5f;
+		glUniform1f(uniID, greenGlow);
 		VAO2.Bind();
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
