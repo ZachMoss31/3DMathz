@@ -107,11 +107,16 @@ public:
 		glUniform1f(glGetUniformLocation(ID, name.c_str()), value);
 	}
 
+	void Delete() {
+		glDeleteProgram(ID);
+	}
+
 private:
 	void CheckCompileErrors(unsigned int shader, std::string type) {
 		int success;
 		char infoLog[1024];
 		if (type != "PROGRAM") {
+			//currently, this is always throwing error because type is always set to shader instead of program.
 			glGetShaderInfoLog(shader, 1024, NULL, infoLog);
 			std::cout << "ERROR:: " << type << " Shader failed to compile. " << infoLog << std::endl;
 		}

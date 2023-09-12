@@ -1,6 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
 #include "Shader.h"
+#include "VAO.h"
+#include "VBO.h"
+
 #include <iostream>
 
 //Frame buffers and Window data...
@@ -8,6 +12,21 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
+
+//First Triangle
+GLfloat vertices[] = {
+	//Position Vectors		//Color Vectors (r, g, b)
+	-0.9f, -0.5f, 0.0f,		1.0f, 0.0f, 0.0f,
+	0.0f, -0.5f, 0.0f,		0.0f, 1.0f, 0.0f,
+	-0.45f, 0.5f, 0.0f,		0.0f, 0.0f, 1.0f
+};
+
+//Second Triangle
+GLfloat flipTri[] = {
+	0.0f, 0.5f, 0.0f,
+	0.9f, 0.5f, 0.0f,
+	0.45f, -0.5f, 0.0f
+};
 
 int main() {
 
@@ -42,56 +61,34 @@ int main() {
 	Shader ourShader("3.3.shader.vs", "3.3.shader.fs");
 	Shader secondShader("3.3.shader.vs", "GreenGlow.fs");
 
-	//First Triangle
-	GLfloat vertices[] = {
-		-0.9f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
-		0.0f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
-		-0.45f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f
-	};
+	VAO VAO1;
+	VAO1.Bind();
+	VBO VBO1(vertices, sizeof(vertices));
+	VAO1.LinkAttrib(VBO1, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
+	//Link attribut 1 to color vectors passed in by shader.
+	VAO1.LinkAttrib(VBO1, 1, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+	VAO1.Unbind();
+	VBO1.Unbind();
 
-	GLuint VBO, VAO;
-	//! Vertex Array Object should be set before the Vertex Buffer Object!
-	glGenVertexArrays(1, &VAO);
-	glGenBuffers(1, &VBO);
+	VAO VAO2;
+	VAO2.Bind();
+	VBO VBO2(flipTri, sizeof(flipTri));
+	VAO2.LinkAttrib(VBO2, 0, 3, GL_FLOAT, 0, (void*)0);
+	VAO2.Unbind();
+	VBO2.Unbind();
 
-	glBindVertexArray(VAO);
-
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-	
-	//Position Attributes
-		//This communicates with the vertex shaders from outside
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
-	glEnableVertexAttribArray(0);
-	//Color Attributes
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
-	glEnableVertexAttribArray(1);
-
-
-
-	//Glowing Shader
-	 
-	//Second Triangle
-	GLfloat flipTri[] = {
-		0.0f, 0.5f, 0.0f,
-		0.9f, 0.5f, 0.0f,
-		0.45f, -0.5f, 0.0f
-	};
-
-	GLuint VBO2, VAO2;
-	glGenVertexArrays(1, &VAO2);
-	glGenBuffers(1, &VBO2);
-	glBindVertexArray(VAO2);
-	glBindBuffer(GL_ARRAY_BUFFER, VBO2);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(flipTri), flipTri, GL_STATIC_DRAW);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
-	glEnableVertexAttribArray(0);
-
+#pragma region Green Glow
+	////Glowing Shader
 	/*float timeValue = glfwGetTime();
 	float greenValue = sin(timeValue) / 2.0f + 0.5f;
 	int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
 	glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);*/
 
+	//then add this in while loop
+		//timeValue = glfwGetTime();
+		//greenValue = sin(timeValue) / 2.0f + 0.5f;
+		//glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+#pragma endregion
 
 	while(!glfwWindowShouldClose(window)) {
 		processInput(window);
@@ -102,15 +99,11 @@ int main() {
 
 		//First Triangle
 		ourShader.Use();
-		glBindVertexArray(VAO);
+		VAO1.Bind();
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 		
-		//Second Triangle
-		//timeValue = glfwGetTime();
-		//greenValue = sin(timeValue) / 2.0f + 0.5f;
-		//glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 		secondShader.Use();
-		glBindVertexArray(VAO2);
+		VAO2.Bind();
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		//How to make sure we refresh each frame
@@ -118,10 +111,12 @@ int main() {
 		glfwPollEvents();
 	}
 
-	glDeleteVertexArrays(1, &VAO);
-	glDeleteBuffers(1, &VBO);
-	glDeleteVertexArrays(1, &VAO2);
-	glDeleteBuffers(1, &VBO2);
+	VAO1.Delete();
+	VBO1.Delete();
+	VAO2.Delete();
+	VBO2.Delete();
+	ourShader.Delete();
+	secondShader.Delete();
 
 	glfwDestroyWindow(window);
 	glfwTerminate();

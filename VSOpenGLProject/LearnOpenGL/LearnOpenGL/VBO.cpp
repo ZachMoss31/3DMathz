@@ -17,3 +17,5 @@ void VBO::Unbind() {
 void VBO::Delete() {
 	glDeleteBuffers(1, &ID);
 }
+
+//Cherno puts the delete call in the destructor.
