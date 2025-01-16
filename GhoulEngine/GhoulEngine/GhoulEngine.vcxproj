@@ -142,12 +142,15 @@
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\EBO.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\stb.cpp" />
+    <ClCompile Include="src\textures\Texture.cpp" />
     <ClCompile Include="src\VAO.cpp" />
     <ClCompile Include="src\VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\EBO.h" />
-    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\shaders\Shader.h" />
+    <ClInclude Include="src\textures\Texture.h" />
     <ClInclude Include="src\VAO.h" />
     <ClInclude Include="src\VBO.h" />
   </ItemGroup>
@@ -156,6 +159,11 @@
     <None Include="src\shaders\3.3.shader.vs" />
     <None Include="src\shaders\GreenGlow.fs" />
     <None Include="src\shaders\Rainbow.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\textures\2D_DefaultText.png" />
+    <Image Include="src\textures\Wait.png" />
+    <Image Include="src\textures\WaitAMin.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

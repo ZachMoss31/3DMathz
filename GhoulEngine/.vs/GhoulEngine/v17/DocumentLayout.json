@@ -1,22 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\",
+  "WorkspaceRootPath": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\Rainbow.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\3.3.shader.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\shaders\\3.3.shader.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\3.3.shader.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\shaders\\3.3.shader.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\VAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\textures\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\textures\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\textures\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\textures\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\Rainbow.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
       "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\shaders\\Rainbow.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\VAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\stb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\stb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B87AC8FC-8EA8-401C-A875-FAC40DC77E95}|GhoulEngine\\GhoulEngine.vcxproj|solutionrelative:GhoulEngine\\src\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,54 +55,126 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VBO.cpp",
-              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VBO.cpp",
-              "RelativeDocumentMoniker": "GhoulEngine\\src\\VBO.cpp",
-              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VBO.cpp",
-              "RelativeToolTip": "GhoulEngine\\src\\VBO.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\Application.cpp",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\Application.cpp",
+              "RelativeToolTip": "GhoulEngine\\src\\Application.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-16T03:20:21.074Z",
+              "WhenOpened": "2024-10-04T19:35:30.04Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VAO.cpp",
-              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.cpp",
-              "RelativeDocumentMoniker": "GhoulEngine\\src\\VAO.cpp",
-              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.cpp",
-              "RelativeToolTip": "GhoulEngine\\src\\VAO.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Title": "VAO.h",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.h",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\VAO.h",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.h",
+              "RelativeToolTip": "GhoulEngine\\src\\VAO.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-04T19:37:16.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\textures\\Texture.cpp",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\textures\\Texture.cpp",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\textures\\Texture.cpp",
+              "RelativeToolTip": "GhoulEngine\\src\\textures\\Texture.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-16T03:18:07.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:39:47.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Texture.h",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\textures\\Texture.h",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\textures\\Texture.h",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\textures\\Texture.h",
+              "RelativeToolTip": "GhoulEngine\\src\\textures\\Texture.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-04T18:36:51.785Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rainbow.fs",
-              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\Rainbow.fs",
-              "RelativeDocumentMoniker": "GhoulEngine\\src\\shaders\\Rainbow.fs",
-              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\Rainbow.fs",
-              "RelativeToolTip": "GhoulEngine\\src\\shaders\\Rainbow.fs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Title": "3.3.shader.fs",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\3.3.shader.fs",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\shaders\\3.3.shader.fs",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\3.3.shader.fs",
+              "RelativeToolTip": "GhoulEngine\\src\\shaders\\3.3.shader.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-02-13T05:26:37.999Z",
+              "WhenOpened": "2024-10-04T18:08:37.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\Application.cpp",
-              "RelativeDocumentMoniker": "GhoulEngine\\src\\Application.cpp",
-              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Portfolio Projects\\Rendering\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\Application.cpp",
-              "RelativeToolTip": "GhoulEngine\\src\\Application.cpp",
-              "ViewState": "AQIAAAoAAAAAAAAAAADwv0UAAACEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-20T02:29:55.938Z",
+              "Title": "3.3.shader.vs",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\3.3.shader.vs",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\shaders\\3.3.shader.vs",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\3.3.shader.vs",
+              "RelativeToolTip": "GhoulEngine\\src\\shaders\\3.3.shader.vs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-04T18:07:01.554Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "stb.cpp",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\stb.cpp",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\stb.cpp",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\stb.cpp",
+              "RelativeToolTip": "GhoulEngine\\src\\stb.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-04T17:30:17.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VBO.cpp",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VBO.cpp",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\VBO.cpp",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VBO.cpp",
+              "RelativeToolTip": "GhoulEngine\\src\\VBO.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-16T03:20:21.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VAO.cpp",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.cpp",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\VAO.cpp",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\VAO.cpp",
+              "RelativeToolTip": "GhoulEngine\\src\\VAO.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-16T03:18:07.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Rainbow.fs",
+              "DocumentMoniker": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\Rainbow.fs",
+              "RelativeDocumentMoniker": "GhoulEngine\\src\\shaders\\Rainbow.fs",
+              "ToolTip": "C:\\Users\\Danke\\OneDrive\\Documents\\OneDrive Folders\\Desktop\\Indie\\Rendering\\Engines\\Ghoul-Engine\\GhoulEngine\\GhoulEngine\\src\\shaders\\Rainbow.fs",
+              "RelativeToolTip": "GhoulEngine\\src\\shaders\\Rainbow.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-13T05:26:37.999Z"
             }
           ]
         }

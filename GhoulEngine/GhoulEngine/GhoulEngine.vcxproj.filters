@@ -30,12 +30,18 @@
     <ClCompile Include="src\VBO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\stb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\textures\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\EBO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Shader.h">
+    <ClInclude Include="src\shaders\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\VAO.h">
@@ -44,11 +50,25 @@
     <ClInclude Include="src\VBO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\textures\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\3.3.shader.fs" />
     <None Include="src\shaders\3.3.shader.vs" />
     <None Include="src\shaders\GreenGlow.fs" />
     <None Include="src\shaders\Rainbow.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\textures\2D_DefaultText.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\textures\WaitAMin.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\textures\Wait.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
