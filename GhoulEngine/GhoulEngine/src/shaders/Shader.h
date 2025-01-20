@@ -60,8 +60,8 @@ public:
 
 		//Compiling the Shaders now...(different function?)
 		GLuint vertex, fragment;
-		int success;
-		char infoLog[512];
+		int success = 0;
+		char infoLog[512] = {};
 
 		//Could I multithread the compilation using threads or CUDA?
 			//Vertex Shader
